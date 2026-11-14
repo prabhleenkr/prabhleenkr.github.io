@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Green Lens · Prabhleen Kaur</title>
+<meta name="description" content="Case study: a youth-led media series spotlighting grassroots climate action in the KW region — 30k+ views in 2 months.">
+<meta property="og:title" content="Green Lens · Prabhleen Kaur">
+<meta property="og:description" content="Case study: a youth-led media series spotlighting grassroots climate action in the KW region — 30k+ views in 2 months.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://prabhleenkr.github.io/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4A0F1F">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;family=La+Belle+Aurore&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#4A0F1F}
+.pk{font-family:'Inter Tight',sans-serif;color:#2B1512;background:#F6EFE4;overflow:clip;position:relative}
+.pk *{box-sizing:border-box}
+.pk h1,.pk h2,.pk h3,.pk p,.pk ul{margin:0}
+.pk a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 48px;position:relative;z-index:2}
+.mono{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.it{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;letter-spacing:0}
+.pen{font-family:'La Belle Aurore',cursive;font-weight:400;line-height:1.15}
+h2{font-size:60px;line-height:.98;font-weight:800;letter-spacing:-.05em}
+h2 .it{font-size:1.06em}
+.dk{background:#4A0F1F;color:#F6EFE4}
+.lt{background:#F6EFE4;color:#2B1512}
+.sec{position:relative}
+.rt{border-radius:56px 56px 0 0;margin-top:-56px}
+.glow{position:absolute;inset:0;pointer-events:none;z-index:0;border-radius:inherit}
+.g1{background:radial-gradient(42% 50% at 86% 22%,rgba(var(--ac),.3),transparent 70%),radial-gradient(36% 42% at 6% 82%,rgba(255,143,177,.22),transparent 70%),radial-gradient(30% 30% at 48% 6%,rgba(169,198,232,.16),transparent 70%)}
+.g2{background:radial-gradient(40% 45% at 8% 20%,rgba(var(--ac),.22),transparent 70%),radial-gradient(40% 45% at 95% 85%,rgba(255,143,177,.18),transparent 70%)}
+.g3{background:radial-gradient(35% 40% at 95% 10%,rgba(var(--ac),.36),transparent 70%),radial-gradient(35% 40% at 0% 100%,rgba(255,143,177,.2),transparent 70%)}
+.ml{-webkit-mask:url(assets/img/lily-cream.png) center/contain no-repeat;mask:url(assets/img/lily-cream.png) center/contain no-repeat}
+.mf{-webkit-mask:url(assets/img/flw-cream.png) center/contain no-repeat;mask:url(assets/img/flw-cream.png) center/contain no-repeat}
+.fl{position:absolute;aspect-ratio:1;pointer-events:none;--r:0deg;z-index:1;will-change:scale,rotate,opacity;animation:bm cubic-bezier(.22,1,.36,1) both;animation-timeline:view();animation-range:entry 0% cover 40%}
+@supports not (animation-timeline:view()){.fl{animation:bm 1.8s cubic-bezier(.22,1,.36,1) both}}
+.hero .fl{animation:bm 2.2s cubic-bezier(.22,1,.36,1) both,sw 12s ease-in-out 2.4s infinite alternate;animation-timeline:auto,auto;animation-range:normal}
+@keyframes bm{from{scale:.2;rotate:calc(var(--r) - 50deg);opacity:0}to{scale:1;rotate:var(--r);opacity:1}}
+@keyframes sw{from{rotate:var(--r)}to{rotate:calc(var(--r) + 6deg)}}
+.js .pj{opacity:0;transform:translateY(24px);transition:opacity .3s ease,transform .3s ease;transition-delay:calc(var(--i,0)*100ms)}
+.js .pj.in{opacity:1;transform:none}
+.js .pj.done{transition-delay:0s}
+.js .sf{opacity:0;transition:opacity .4s ease}
+.js .sf.in{opacity:1}
+.lift{transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s ease}
+.lift:hover{transform:translateY(-4px)}
+.js .pj.lift.in:hover{transform:translateY(-4px)}
+.nav{position:sticky;top:0;z-index:40;background:rgba(74,15,31,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(246,239,228,.12);color:#F6EFE4}
+.nav .in{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.nav .lnks{display:flex;gap:36px;font-size:14px;font-weight:500}
+.nav .lnks a{color:#E8D9D2;transition:color .3s}
+.nav .lnks a:hover{color:#F5D77A}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:99px;padding:15px 28px;font-size:15px;font-weight:700;min-height:48px;transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s ease}
+.btn:hover{transform:translateY(-4px);box-shadow:0 20px 40px -15px rgba(0,0,0,.35)}
+.pk .b-pk{background:#FF8FB1;color:#2B1512}
+.b-ol{box-shadow:inset 0 0 0 1.5px currentColor}
+.ul{position:relative;white-space:nowrap;z-index:0}
+.ul:after{content:"";position:absolute;left:-4px;right:-8px;bottom:.02em;height:.2em;background:rgb(var(--ac));border-radius:6px 14px 8px 18px;transform:rotate(-1.2deg);z-index:-1;animation:mk 1s cubic-bezier(.22,1,.36,1) 1s both;transform-origin:left}
+@keyframes mk{from{scale:0 1}to{scale:1 1}}
+.back{display:inline-flex;gap:10px;color:#E8D9D2;transition:gap .4s cubic-bezier(.22,1,.36,1)}
+.back:hover{gap:20px}
+.meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:44px}
+.role{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:40px;padding:16px 30px;border-radius:999px;background:rgba(246,239,228,.08);border:1px solid rgba(246,239,228,.22)}
+.role .mono{color:#F5D77A}
+.role b{font-size:30px;font-weight:800;letter-spacing:-.035em;color:#F6EFE4}
+.role .rs{font-size:15px;color:#E8D9D2}
+.meta div{border-top:1px solid rgba(246,239,228,.24);padding-top:14px}
+.meta p.v{font-size:16px;line-height:1.5;margin-top:10px;color:#F6EFE4}
+.meta .mono{color:#F5D77A}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:52px}
+.tl{padding:30px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;background:#FFFCF7;border-radius:28px;box-shadow:0 20px 40px -15px rgba(43,21,18,.16)}
+.tl:hover{box-shadow:0 28px 50px -15px rgba(43,21,18,.26)}
+.tl b{font-size:64px;line-height:1;font-weight:800;letter-spacing:-.055em;color:#6E1A2E}
+.tl span{font-size:15px;line-height:1.45;color:#5E4640}
+.bf{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:56px;align-items:start}
+.sp{display:grid;grid-template-columns:120px minmax(0,4fr) minmax(0,6fr);gap:32px;padding:36px 0;border-top:1px solid rgba(43,21,18,.16);align-items:start;transition:padding .4s cubic-bezier(.22,1,.36,1),background .4s ease}
+.sp:hover{padding-left:20px;background:linear-gradient(90deg,rgba(var(--ac),.3),transparent 70%)}
+.sp .n{font-family:'Instrument Serif',serif;font-style:italic;font-size:64px;line-height:.9;color:#6E1A2E}
+.sp h3{font-size:30px;font-weight:700;letter-spacing:-.035em;line-height:1.05}
+.sp p{font-size:17px;line-height:1.65;color:#5E4640}
+.gl{background:linear-gradient(145deg,rgba(246,239,228,.1),rgba(246,239,228,.03));border:1px solid rgba(246,239,228,.16);border-radius:32px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 40px -15px rgba(0,0,0,.45)}
+.stg{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:36px;padding:72px 40px}
+.dv{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.stg:hover .dv:nth-child(odd){transform:translateY(-14px) rotate(-2deg)}
+.stg:hover .dv:nth-child(even){transform:translateY(10px) rotate(2deg)}
+.phone{width:180px;aspect-ratio:9/19;background:#1a0d0b;border-radius:34px;padding:8px;box-shadow:0 30px 50px -20px rgba(10,2,8,.7)}
+.scr{width:100%;height:100%;border-radius:27px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.s1{background:linear-gradient(160deg,#FF8FB1,#FFC2D4);color:#2B1512}
+.s2{background:linear-gradient(160deg,#A9C6E8,#F6EFE4);color:#2B1512}
+.s3{background:linear-gradient(160deg,#F5D77A,#FFC2D4);color:#2B1512}
+.s4{background:linear-gradient(160deg,#6E1A2E,#2B1512);color:#F5D77A}
+.nx{display:block;border-radius:40px;padding:64px;position:relative;overflow:hidden;box-shadow:0 20px 40px -15px rgba(0,0,0,.45)}
+.nx .nm{display:block;font-size:92px;line-height:.96;font-weight:800;letter-spacing:-.055em;margin-top:22px;max-width:920px}
+.nx .wm{position:absolute;width:340px;aspect-ratio:1;right:-60px;top:-80px;rotate:20deg;opacity:.35;pointer-events:none}
+.scr.im{padding:0;overflow:hidden;background:#1a0d0b}
+.scr.im img{width:100%;height:100%;object-fit:cover;display:block}
+.grp+.grp{margin-top:72px}
+.grp h3{font-size:28px;font-weight:700;letter-spacing:-.03em;color:#F6EFE4}
+.grp .d{font-size:16px;line-height:1.6;color:#E8D9D2;max-width:640px;margin-top:8px}
+.row{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;margin-top:30px}
+.itm{display:flex;flex-direction:column;align-items:center;max-width:100%}
+.shot{border-radius:18px;overflow:hidden;box-shadow:0 30px 50px -20px rgba(10,2,8,.7);background:#FFFCF7;max-width:100%;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.shot:hover{transform:translateY(-6px) rotate(-1deg)}
+.shot img{display:block;width:100%;height:auto}
+.cap{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#CDB8B1;margin-top:14px;text-align:center;max-width:260px;line-height:1.5}
+.igstage{position:relative;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:34px;margin-top:30px;padding:70px 40px;border-radius:32px;background:radial-gradient(60% 70% at 50% 40%,rgba(251,233,176,.22),transparent 70%),linear-gradient(145deg,rgba(246,239,228,.1),rgba(246,239,228,.03));border:1px solid rgba(246,239,228,.16)}
+.igm{width:260px;background:#fff;border-radius:16px;overflow:hidden;color:#262626;box-shadow:0 34px 60px -24px rgba(10,2,8,.75);transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.igm .h{display:flex;align-items:center;gap:9px;padding:10px 12px;font-size:12.5px;font-weight:700}
+.igm .av{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#5E8C4E;color:#fff;font-size:10px;font-weight:800;box-shadow:0 0 0 2px #fff,0 0 0 3.5px #F5D77A}
+.igm .dots{margin-left:auto;font-size:10px;color:#8e8e8e;letter-spacing:1px}
+.igm img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.igm .a{display:flex;gap:14px;padding:10px 12px 12px}
+.igm .a svg{width:21px;height:21px;fill:none;stroke:#262626;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.igm .a .sv{margin-left:auto}
+.ig1{rotate:-4deg;margin-top:40px}.ig2{rotate:2deg}.ig3{rotate:-1deg;margin-top:-30px}.ig4{rotate:4deg;margin-top:50px}
+.igstage .itm:hover{z-index:2}.igstage .itm:hover .igm{transform:translateY(-8px) scale(1.02)}
+@media(max-width:860px){.ig1,.ig2,.ig3,.ig4{rotate:0deg;margin-top:0}}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.skills span{padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;background:rgba(246,239,228,.08);border:1px solid rgba(246,239,228,.2);color:#F6EFE4}
+@media(max-width:860px){.wrap{padding:0 20px}h2{font-size:38px}.meta,.tiles,.bf,.sp{grid-template-columns:1fr!important}.meta{margin-top:48px}.hero h1{font-size:52px!important}.fl{opacity:.5}.nav .lnks{display:none}.nx{padding:32px}.nx .nm{font-size:42px}.phone{width:140px}.tl b{font-size:48px}.mnote{display:none}.rt{border-radius:32px 32px 0 0;margin-top:-32px}}
+@media(max-width:860px){
+section.sec{padding-top:96px!important;padding-bottom:96px!important}
+.hero{padding-bottom:120px!important}
+.tiles{grid-template-columns:1fr 1fr!important;gap:12px}
+.tl{min-height:150px;padding:20px 18px;border-radius:22px}
+.tl b{font-size:28px!important;white-space:normal!important;line-height:1.05}
+.tl span{font-size:13px;line-height:1.4}
+[style*="font-size:46px"]{font-size:28px!important}
+[style*="font-size:38px"]{font-size:26px!important}
+.sp{gap:10px;padding:26px 0}.sp .n{font-size:44px}.sp h3{font-size:24px}.sp p{font-size:16px}
+.stg{gap:18px;padding:36px 12px}
+.role{padding:14px 22px;border-radius:24px}.role b{font-size:24px}
+.nx .wm{width:200px}
+}
+</style>
+</head>
+<body>
+<div class="pk" style="--ac:245,215,122">
+
+<nav class="nav"><div class="wrap in"><a href="./" style="display:flex;align-items:baseline;gap:8px"><b style="font-size:20px;font-weight:800;letter-spacing:-.03em">Prabhleen Kaur</b></a><div class="lnks"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></div><a class="btn b-pk" href="index.html#contact" style="padding:11px 22px;min-height:44px;font-size:14px">Let's talk</a></div></nav>
+
+<header class="hero sec dk" style="padding:56px 0 160px">
+<div class="glow g1"></div>
+<i class="fl ml" style="--r:-12deg;width:560px;right:-110px;top:-30px;background:#F5D77A;animation-delay:.3s,2.5s"></i>
+<i class="fl mf" style="--r:10deg;width:280px;right:420px;bottom:-120px;background:#FF8FB1;animation-delay:1s,3s"></i>
+<i class="fl ml" style="--r:-28deg;width:220px;left:-60px;bottom:40px;background:#A9C6E8;animation-delay:1.5s,3.5s"></i>
+<div class="wrap">
+<a class="back mono" href="./"><span>←</span> All work</a>
+<p class="mono" style="margin-top:90px;color:#F5D77A">(03) Case study · Jul – Oct 2025</p>
+<h1 style="font-size:116px;line-height:.93;font-weight:800;letter-spacing:-.058em;max-width:1000px;margin-top:20px">Green <span class="ul">Lens</span></h1>
+<p style="font-size:21px;line-height:1.55;max-width:620px;margin-top:32px;color:#E8D9D2">A youth-led media series spotlighting <span class="it" style="font-size:24px;color:#FBE9B0">grassroots climate action</span> in the KW region, across TikTok, Reels, Shorts and YouTube.</p>
+<div class="role"><span class="mono">My role</span><b>Social Media Manager</b><span class="rs">Freelance project</span></div>
+<div class="meta"><div><span class="mono">Timeline</span><p class="v">Jul – Oct 2025</p></div><div><span class="mono">Tools</span><p class="v">Canva · Capcut · Procreate</p></div><div><span class="mono">Deliverables</span><p class="v">Reels, TikToks and Shorts, carousels, Stories, reel covers, YouTube thumbnails and a full YouTube episode</p></div></div>
+<div style="margin-top:28px"><span class="mono" style="color:#F5D77A">Skills</span><div class="skills"><span>Content creation</span><span>Graphic design</span><span>Video editing</span><span>Copywriting</span><span>Social media management</span></div></div>
+</div>
+</header>
+
+<section class="sec lt rt" style="padding:130px 0;z-index:3">
+<div class="glow g3"></div>
+<i class="fl mf" style="--r:-18deg;width:260px;right:-90px;top:30px;background:#F5D77A"></i>
+<div class="wrap sf">
+<p class="mono pj" style="color:#6E1A2E">Highlights</p>
+<div class="tiles">
+<div class="tl lift pj" style="--i:0"><b>30k+</b><span>views in 2 months</span></div>
+<div class="tl lift pj" style="--i:1"><b>25+</b><span>pieces of content</span></div>
+<div class="tl lift pj" style="--i:2"><b>4–6 min</b><span>full YouTube episode</span></div>
+<div class="tl lift pj" style="--i:3"><b>4</b><span>platforms</span></div>
+</div>
+</div>
+</section>
+
+<section class="sec dk rt" style="padding:140px 0;z-index:4">
+<div class="glow g2"></div>
+<i class="fl ml" style="--r:24deg;width:280px;left:-100px;bottom:20px;background:#FF8FB1"></i>
+<div class="wrap sf bf">
+<p class="mono pj" style="color:#F5D77A">The brief</p>
+<p class="pj" style="font-size:46px;line-height:1.14;font-weight:600;letter-spacing:-.035em">Green Lens is a youth-led digital media series under the Young Eye Initiative, designed to spotlight <span class="it" style="color:#FBE9B0">grassroots climate action</span> and environmental innovation in the KW region.</p>
+</div>
+</section>
+
+<section class="sec lt rt" style="padding:140px 0;z-index:5">
+<div class="glow g3"></div>
+<i class="fl ml" style="--r:14deg;width:280px;right:-90px;top:60px;background:#A9C6E8"></i>
+<div class="wrap sf">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px"><h2 class="pj">What I <span class="it">did.</span></h2><p class="pen pj mnote" style="font-size:30px;color:#6E1A2E;rotate:-3deg">every platform, one story ↓</p></div>
+<div class="sp pj" style="--i:0"><span class="n">01</span><h3>Every platform</h3><p>Produced content across TikTok, YouTube Shorts and Instagram (Reels, carousel posts and Stories) to increase engagement and reach.</p></div>
+<div class="sp pj" style="--i:1"><span class="n">02</span><h3>Long-form</h3><p>Produced a full 4–6 minute YouTube episode.</p></div>
+<div class="sp pj" style="--i:2;border-bottom:1px solid rgba(43,21,18,.16)"><span class="n">03</span><h3>Graphics</h3><p>Designed Instagram posts and Stories, reel covers and YouTube thumbnails, including guest features and a book launch announcement in partnership with Enviro-Stewards.</p></div>
+</div>
+</section>
+
+<section class="sec dk rt" style="padding:140px 0;z-index:6">
+<div class="glow g1"></div>
+<i class="fl mf" style="--r:-26deg;width:280px;left:-90px;top:30px;background:#F5D77A"></i>
+<div class="wrap sf">
+<p class="mono pj" style="color:#F5D77A">Selected work</p>
+<h2 class="pj" style="margin:18px 0 56px">The work, <span class="it" style="color:#FBE9B0">up close.</span></h2>
+<div class="grp pj"><h3>Social media samples</h3><p class="d">Short-form videos for TikTok, YouTube Shorts and Instagram Reels.</p>
+<div class="gl stg" style="margin-top:30px"><div class="dv itm"><div class="phone"><div class="scr im"><img src="assets/img/gl-reel1.jpg" alt="Green Lens reel"></div></div><p class="cap">Reel</p></div><div class="dv itm"><div class="phone"><div class="scr im"><img src="assets/img/gl-reel2.jpg" alt="Green Lens reel"></div></div><p class="cap">Reel</p></div></div></div>
+<div class="grp pj"><h3>Graphics</h3><p class="d">Instagram posts and Stories, reel covers and YouTube thumbnails.</p>
+<div class="igstage">
+<div class="itm ig1"><div class="igm"><div class="h"><span class="av">GL</span><span>Green Lens</span><span class="dots">•••</span></div><img src="assets/img/gl-quote.png" alt="Guest quote post"><div class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg><svg class="sv" viewBox="0 0 24 24" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg></div></div><p class="cap">Guest quote post</p></div>
+<div class="itm ig2"><div class="phone" style="width:200px"><div class="scr im" style="background:#F6EFE4"><img src="assets/img/gl-story.png" alt="Instagram Story graphic" style="object-fit:contain"></div></div><p class="cap">Story</p></div>
+<div class="itm ig3"><div class="igm"><div class="h"><span class="av">GL</span><span>Green Lens</span><span class="dots">•••</span></div><img src="assets/img/gl-book.png" alt="Book launch announcement with Enviro-Stewards"><div class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg><svg class="sv" viewBox="0 0 24 24" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg></div></div><p class="cap">Book launch with Enviro-Stewards</p></div>
+<div class="itm ig4"><div class="igm"><div class="h"><span class="av">GL</span><span>Green Lens</span><span class="dots">•••</span></div><img src="assets/img/gl-hello.png" alt="Guest feature post"><div class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg><svg class="sv" viewBox="0 0 24 24" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg></div></div><p class="cap">Guest feature</p></div>
+</div></div>
+</div>
+</section>
+
+<section class="sec lt rt" style="padding:120px 0 70px;z-index:7">
+<div class="glow g3"></div>
+<div class="wrap sf">
+<a class="nx lift pj" href="habitat-for-humanity.html" style="background:linear-gradient(135deg,#4A0F1F,#6E1A2E);color:#F6EFE4"><i class="wm mf" style="background:#FF8FB1"></i><p class="mono" style="position:relative;color:#F5D77A">Next project · (04)</p><span class="nm" style="position:relative">Habitat for Humanity →</span></a>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:48px;flex-wrap:wrap;gap:16px"><a class="btn b-ol" href="./">← Back to all work</a><p class="mono" style="color:#5E4640">Prabhleen Kaur · kaurprabhleen65@gmail.com</p></div>
+</div>
+</section>
+
+</div>
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('touchstart',function(){},{passive:true});
+(function(){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');setTimeout(function(){e.target.classList.add('done')},900);io.unobserve(e.target);}})},{threshold:0.12});
+document.querySelectorAll('.pj').forEach(function(el){io.observe(el)});
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');so.unobserve(e.target);}})},{threshold:0.04});
+document.querySelectorAll('.sf').forEach(function(el){so.observe(el)});
+})();
+</script>
+</body>
+</html>
