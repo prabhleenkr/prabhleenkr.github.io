@@ -147,6 +147,20 @@ section.sec>.fl{width:110px!important;opacity:.4!important;z-index:0!important}
 header.hero>.fl{width:150px!important;opacity:.35!important}
 }
 </style>
+<style>
+.hv{position:relative;display:block;border-radius:inherit}
+.scr .hv{width:100%;height:100%}
+.fr .hv{width:100%;height:100%}.fr .hv img{width:100%;height:100%;object-fit:contain;max-height:none}
+.hv>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;opacity:0;transition:opacity .45s ease;pointer-events:none;background:transparent}
+.fr .hv>video{object-fit:contain}
+.hv.on>video{opacity:1}
+.hv .snd{position:absolute;right:8px;bottom:8px;z-index:3;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(74,15,31,.82);color:#F6EFE4;box-shadow:0 6px 14px -6px rgba(0,0,0,.6);cursor:pointer;opacity:0;transform:scale(.85);transition:opacity .3s,transform .3s,background .3s}
+.hv.on .snd{opacity:1;transform:none}
+.hv .snd:hover{background:#FF8FB1;color:#2B1512}
+.hv .snd:focus-visible{outline:2px solid #F5D77A;outline-offset:2px;opacity:1}
+.hv .snd .i-on{display:none}.hv.sound .snd .i-on{display:block}.hv.sound .snd .i-off{display:none}
+.lap .hv .snd{width:28px;height:28px;right:6px;bottom:6px}
+</style>
 </head>
 <body>
 <div class="pk" style="--ac:245,215,122">
@@ -210,7 +224,7 @@ header.hero>.fl{width:150px!important;opacity:.35!important}
 <p class="mono pj" style="color:#F5D77A">Selected work</p>
 <h2 class="pj" style="margin:18px 0 56px">The work, <span class="it" style="color:#FBE9B0">up close.</span></h2>
 <div class="grp pj"><h3>Social media samples</h3><p class="d">Short-form videos for TikTok, YouTube Shorts and Instagram Reels.</p>
-<div class="gl stg" style="margin-top:30px"><div class="dv itm"><div class="phone"><div class="scr im"><img src="assets/img/gl-reel1.jpg" alt="Green Lens reel"></div></div><p class="cap">Reel</p></div><div class="dv itm"><div class="phone"><div class="scr im"><img src="assets/img/gl-reel2.jpg" alt="Green Lens reel"></div></div><p class="cap">Reel</p></div></div></div>
+<div class="gl stg" style="margin-top:30px"><div class="dv itm"><div class="phone"><div class="scr im"><span class="hv"><img src="assets/img/gl-reel1.jpg" alt="Green Lens reel"><video muted loop playsinline preload="none" data-src="assets/video/gl-reel-1.mp4" aria-hidden="true"></video><span class="snd" role="button" tabindex="0" aria-label="Turn sound on"><svg class="i-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg><svg class="i-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg></span></span></div></div><p class="cap">Reel</p></div><div class="dv itm"><div class="phone"><div class="scr im"><span class="hv"><img src="assets/img/gl-reel2.jpg" alt="Green Lens reel"><video muted loop playsinline preload="none" data-src="assets/video/gl-reel-2.mp4" aria-hidden="true"></video><span class="snd" role="button" tabindex="0" aria-label="Turn sound on"><svg class="i-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg><svg class="i-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg></span></span></div></div><p class="cap">Reel</p></div></div></div>
 <div class="grp pj"><h3>Graphics</h3><p class="d">Instagram posts and Stories, reel covers and YouTube thumbnails.</p>
 <div class="igstage">
 <div class="itm ig1"><div class="igm"><div class="h"><span class="av">GL</span><span>Green Lens</span><span class="dots">•••</span></div><img src="assets/img/gl-quote.png" alt="Guest quote post"><div class="a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg><svg class="sv" viewBox="0 0 24 24" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg></div></div><p class="cap">Guest quote post</p></div>
@@ -238,6 +252,25 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 document.querySelectorAll('.pj').forEach(function(el){io.observe(el)});
 var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');so.unobserve(e.target);}})},{threshold:0.04});
 document.querySelectorAll('.sf').forEach(function(el){so.observe(el)});
+})();
+</script>
+<script>
+(function(){
+var fine=window.matchMedia&&matchMedia('(hover:hover) and (pointer:fine)').matches;
+var all=[].slice.call(document.querySelectorAll('.hv'));
+all.forEach(function(w){
+ var v=w.querySelector('video'),b=w.querySelector('.snd');
+ function play(){if(!v.getAttribute('src'))v.setAttribute('src',v.dataset.src);var p=v.play();if(p&&p.catch)p.catch(function(){});}
+ function stop(){v.pause();w.classList.remove('on');try{v.currentTime=0}catch(e){}if(!v.muted){v.muted=true;w.classList.remove('sound');b.setAttribute('aria-label','Turn sound on');}}
+ v.addEventListener('playing',function(){w.classList.add('on')});
+ if(fine){var host=w.closest('.dv,figure,.itm')||w;host.addEventListener('mouseenter',play);host.addEventListener('mouseleave',stop);}
+ else if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.intersectionRatio>=.6)play();else stop();})},{threshold:[0,.6]}).observe(w);}
+ function toggle(e){e.preventDefault();e.stopPropagation();var turnOn=v.muted;
+  if(turnOn){all.forEach(function(o){if(o!==w){var ov=o.querySelector('video');if(!ov.muted){ov.muted=true;o.classList.remove('sound');}}});}
+  v.muted=!turnOn;w.classList.toggle('sound',turnOn);b.setAttribute('aria-label',turnOn?'Turn sound off':'Turn sound on');if(turnOn)play();}
+ b.addEventListener('click',toggle);
+ b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')toggle(e);});
+});
 })();
 </script>
 </body>
