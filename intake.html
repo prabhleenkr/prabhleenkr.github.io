@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project intake · Prabhleen Kaur</title>
+<meta name="description" content="Tell me about your project so we can start in the right place.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Project intake · Prabhleen Kaur">
+<meta property="og:description" content="Tell me about your project so we can start in the right place.">
+<meta property="og:image" content="https://prabhleenkr.github.io/assets/og-image.jpg">
+<meta name="theme-color" content="#4A0F1F">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&amp;family=Instrument+Serif:ital@0;1&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F6EFE4;color:#2B1512;font-family:'Inter Tight','Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#6E1A2E}
+.mono{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.it{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0;font-size:1.06em}
+.hero{position:relative;overflow:hidden;background:#4A0F1F;color:#F6EFE4;padding:56px 0 120px}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(42% 50% at 88% 20%,rgba(255,143,177,.3),transparent 70%),radial-gradient(36% 42% at 4% 90%,rgba(245,215,122,.18),transparent 70%)}
+.lily{position:absolute;width:420px;right:-120px;top:-60px;rotate:-14deg;pointer-events:none}
+.wrap{position:relative;max-width:820px;margin:0 auto;padding:0 24px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.top img{width:52px;height:52px}
+.top a{color:#E8D9D2;text-decoration:none;font-size:14px;font-weight:600}
+.hero .mono{color:#F5D77A;margin-top:72px;display:block}
+h1{margin:16px 0 0;font-size:clamp(46px,8vw,84px);line-height:.94;font-weight:800;letter-spacing:-.055em}
+h1 .it{color:#FFC2D4}
+.lead{margin:24px 0 0;font-size:19px;line-height:1.6;color:#E8D9D2;max-width:600px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.meta span{padding:9px 16px;border-radius:999px;border:1px solid rgba(246,239,228,.3);font-size:14px;font-weight:600}
+form{position:relative;margin-top:-64px;padding-bottom:80px}
+.sec{background:#FFFCF7;border-radius:28px;padding:36px;margin-bottom:20px;box-shadow:0 20px 40px -15px rgba(43,21,18,.16)}
+.sec>.mono{color:#6E1A2E}
+h2{margin:10px 0 6px;font-size:32px;line-height:1.05;font-weight:800;letter-spacing:-.04em}
+.sub{margin:0 0 26px;font-size:15px;line-height:1.55;color:#5E4640}
+.f{margin-top:22px}
+.f>label,.f>.q{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+.f .hint{display:block;font-size:13.5px;font-weight:400;color:#7A5D56;margin-top:3px}
+.req{color:#6E1A2E}
+input[type=text],input[type=email],input[type=url],input[type=date],textarea,select{width:100%;font:inherit;font-size:16px;color:#2B1512;background:#F6EFE4;border:1.5px solid rgba(43,21,18,.14);border-radius:14px;padding:14px 16px;transition:border-color .2s,background .2s}
+textarea{min-height:110px;resize:vertical;line-height:1.5}
+input:focus,textarea:focus,select:focus{outline:none;border-color:#6E1A2E;background:#FFFCF7}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two .f{margin-top:22px}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills label{position:relative;cursor:pointer}
+.pills input{position:absolute;opacity:0;pointer-events:none}
+.pills span{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:#F6EFE4;border:1.5px solid rgba(43,21,18,.14);font-size:15px;font-weight:600;transition:background .2s,border-color .2s,color .2s}
+.pills label:hover span{border-color:rgba(110,26,46,.45)}
+.pills input:checked+span{background:#4A0F1F;border-color:#4A0F1F;color:#F6EFE4}
+.pills input:focus-visible+span{outline:2px solid #6E1A2E;outline-offset:2px}
+.hp{display:none}
+.end{background:#4A0F1F;color:#F6EFE4;border-radius:28px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.end p{margin:0;font-size:17px;line-height:1.55;color:#E8D9D2;max-width:460px}
+.end p b{color:#F6EFE4}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;background:#FF8FB1;color:#2B1512;font-size:17px;font-weight:800;padding:18px 32px;min-height:52px;transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s}
+button:hover{transform:translateY(-4px);box-shadow:0 20px 40px -15px rgba(0,0,0,.45)}
+button:focus-visible{outline:2px solid #F5D77A;outline-offset:3px}
+.err{display:none;margin-top:14px;color:#FFC2D4;font-weight:600}
+footer{text-align:center;padding:0 24px 48px;font-size:14px;color:#7A5D56}
+@media(max-width:640px){.two{grid-template-columns:1fr;gap:0}.sec,.end{padding:26px 22px;border-radius:24px}h2{font-size:27px}.lily{width:260px;right:-100px;opacity:.6}}
+</style>
+</head>
+<body>
+<header class="hero">
+<img class="lily" src="assets/img/lily-cream.png" alt="" aria-hidden="true" style="opacity:.28">
+<div class="wrap">
+<div class="top"><a href="./" aria-label="Prabhleen Kaur home"><img src="assets/favicon.svg" alt="pk monogram"></a><a href="./">← prabhleenkr.github.io</a></div>
+<span class="mono">Project intake</span>
+<h1>Let's start with <span class="it">your story.</span></h1>
+<p class="lead">A few questions so I understand your business, your goals and how you want people to feel. Answer what you can. Nothing here is a commitment, and "not sure yet" is always a fine answer.</p>
+<div class="meta"><span>About 10 minutes</span><span>5 short sections</span><span>Goes straight to my inbox</span></div>
+</div>
+</header>
+
+<form class="wrap" id="intake" action="https://formsubmit.co/kaurprabhleen65@gmail.com" method="POST">
+<input type="hidden" name="_subject" id="subj" value="New project intake">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://prabhleenkr.github.io/intake-thanks.html">
+<input type="hidden" name="_autoresponse" value="Thank you for sharing your project with me. I've received your answers and I'll be in touch soon. Prabhleen">
+<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+<section class="sec">
+<span class="mono">(01) About you</span>
+<h2>Nice to meet you.</h2>
+<p class="sub">The basics, so I know who I'm talking to.</p>
+<div class="two">
+<div class="f"><label for="name">Your name <span class="req">*</span></label><input type="text" id="name" name="Name" required autocomplete="name"></div>
+<div class="f"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required autocomplete="email"></div>
+</div>
+<div class="two">
+<div class="f"><label for="biz">Business or organization <span class="req">*</span></label><input type="text" id="biz" name="Business" required autocomplete="organization"></div>
+<div class="f"><label for="role">Your role</label><input type="text" id="role" name="Role" placeholder="Founder, owner, director…"></div>
+</div>
+<div class="f"><label for="links">Current website and social links<span class="hint">Paste anything you already have, one per line.</span></label><textarea id="links" name="Current links" rows="3"></textarea></div>
+<div class="f"><label for="what">In a few sentences, what does your business do and who is it for?</label><textarea id="what" name="About the business"></textarea></div>
+</section>
+
+<section class="sec">
+<span class="mono">(02) The project</span>
+<h2>What are we making?</h2>
+<p class="sub">Pick everything that applies.</p>
+<div class="f" data-group="Services needed"><span class="q">What do you need help with?</span>
+<div class="pills">
+<label><input type="checkbox" value="New website"><span>New website</span></label>
+<label><input type="checkbox" value="Website redesign"><span>Website redesign</span></label>
+<label><input type="checkbox" value="Brand identity"><span>Brand identity</span></label>
+<label><input type="checkbox" value="Social media"><span>Social media</span></label>
+<label><input type="checkbox" value="Content and video"><span>Content and video</span></label>
+<label><input type="checkbox" value="Not sure yet"><span>Not sure yet</span></label>
+</div></div>
+<div class="f" data-group="Main goal"><span class="q">What's the main job of the website?</span>
+<div class="pills">
+<label><input type="checkbox" value="Get bookings or inquiries"><span>Get bookings or inquiries</span></label>
+<label><input type="checkbox" value="Sell products"><span>Sell products</span></label>
+<label><input type="checkbox" value="Build credibility"><span>Build credibility</span></label>
+<label><input type="checkbox" value="Show my work"><span>Show my work</span></label>
+<label><input type="checkbox" value="Raise donations"><span>Raise donations</span></label>
+<label><input type="checkbox" value="Share information"><span>Share information</span></label>
+</div></div>
+<div class="f" data-group="Pages"><span class="q">Which pages do you think you need?</span>
+<div class="pills">
+<label><input type="checkbox" value="Home"><span>Home</span></label>
+<label><input type="checkbox" value="About"><span>About</span></label>
+<label><input type="checkbox" value="Services"><span>Services</span></label>
+<label><input type="checkbox" value="Work or case studies"><span>Work or case studies</span></label>
+<label><input type="checkbox" value="Shop"><span>Shop</span></label>
+<label><input type="checkbox" value="Blog"><span>Blog</span></label>
+<label><input type="checkbox" value="Booking"><span>Booking</span></label>
+<label><input type="checkbox" value="Contact"><span>Contact</span></label>
+<label><input type="checkbox" value="Not sure yet"><span>Not sure yet</span></label>
+</div></div>
+<div class="f"><label for="must">Any must-have features?<span class="hint">For example a contact form, booking calendar, newsletter sign-up, gallery or videos.</span></label><textarea id="must" name="Must-have features"></textarea></div>
+<div class="f"><label for="success">What would make this project a success for you?</label><textarea id="success" name="Success looks like"></textarea></div>
+</section>
+
+<section class="sec">
+<span class="mono">(03) Your brand</span>
+<h2>How should it <span class="it">feel?</span></h2>
+<p class="sub">This is where your personality comes in.</p>
+<div class="f" data-group="Existing brand assets"><span class="q">Do you already have a logo, colours or fonts?</span>
+<div class="pills">
+<label><input type="checkbox" value="Yes, a full brand kit"><span>Yes, a full brand kit</span></label>
+<label><input type="checkbox" value="Some pieces"><span>Some pieces</span></label>
+<label><input type="checkbox" value="Nothing yet"><span>Nothing yet</span></label>
+</div></div>
+<div class="f"><label for="assets">Link to your brand files, photos or logo<span class="hint">A Google Drive or Dropbox folder works best. Original, full-size files if you have them.</span></label><input type="url" id="assets" name="Brand files link" placeholder="https://"></div>
+<div class="f"><label for="words">Describe your brand in three words</label><input type="text" id="words" name="Three words" placeholder="Warm, bold, playful…"></div>
+<div class="f"><label for="aud">Who is your ideal customer or audience?</label><textarea id="aud" name="Audience"></textarea></div>
+<div class="f"><label for="love">Websites or accounts you love, and what you love about them</label><textarea id="love" name="Inspiration"></textarea></div>
+<div class="f"><label for="avoid">Anything you definitely don't want?<span class="hint">Colours, styles, words or anything that doesn't feel like you.</span></label><textarea id="avoid" name="Avoid"></textarea></div>
+</section>
+
+<section class="sec">
+<span class="mono">(04) Content</span>
+<h2>What do we have to work with?</h2>
+<p class="sub">No pressure. I can help with anything that's missing.</p>
+<div class="f" data-group="Written content"><span class="q">Do you have the writing for your site?</span>
+<div class="pills">
+<label><input type="checkbox" value="Yes, it's ready"><span>Yes, it's ready</span></label>
+<label><input type="checkbox" value="Some of it"><span>Some of it</span></label>
+<label><input type="checkbox" value="I'd like help writing it"><span>I'd like help writing it</span></label>
+</div></div>
+<div class="f" data-group="Photos and video"><span class="q">Do you have photos or videos to use?</span>
+<div class="pills">
+<label><input type="checkbox" value="Yes"><span>Yes</span></label>
+<label><input type="checkbox" value="Some"><span>Some</span></label>
+<label><input type="checkbox" value="Not yet"><span>Not yet</span></label>
+</div></div>
+<div class="f"><label for="proof">Results, reviews or testimonials you'd like to show off</label><textarea id="proof" name="Results and testimonials"></textarea></div>
+</section>
+
+<section class="sec">
+<span class="mono">(05) The practical bits</span>
+<h2>Timing and logistics.</h2>
+<p class="sub">So I can plan the work around you.</p>
+<div class="f" data-group="Updating the site"><span class="q">After launch, would you like to update the site yourself?</span>
+<div class="pills">
+<label><input type="checkbox" value="Yes, often"><span>Yes, often</span></label>
+<label><input type="checkbox" value="Occasionally"><span>Occasionally</span></label>
+<label><input type="checkbox" value="I'd rather you handle it"><span>I'd rather you handle it</span></label>
+</div></div>
+<div class="f" data-group="Domain"><span class="q">Do you have a domain name (like yourbusiness.com)?</span>
+<div class="pills">
+<label><input type="checkbox" value="Yes, I have one"><span>Yes, I have one</span></label>
+<label><input type="checkbox" value="No, I need one"><span>No, I need one</span></label>
+<label><input type="checkbox" value="Not sure"><span>Not sure</span></label>
+</div></div>
+<div class="two">
+<div class="f"><label for="date">Ideal launch date</label><input type="date" id="date" name="Ideal launch date"></div>
+<div class="f"><label for="budget">Budget range <span class="hint" style="display:inline">(optional)</span></label><input type="text" id="budget" name="Budget" placeholder="A rough range is perfect"></div>
+</div>
+<div class="f"><label for="else">Anything else I should know?</label><textarea id="else" name="Anything else"></textarea></div>
+<div class="f" data-group="Heard about me from"><span class="q">How did you hear about me?</span>
+<div class="pills">
+<label><input type="checkbox" value="Instagram"><span>Instagram</span></label>
+<label><input type="checkbox" value="LinkedIn"><span>LinkedIn</span></label>
+<label><input type="checkbox" value="A friend or referral"><span>A friend or referral</span></label>
+<label><input type="checkbox" value="My website"><span>My website</span></label>
+<label><input type="checkbox" value="Other"><span>Other</span></label>
+</div></div>
+</section>
+
+<div class="end">
+<p><b>That's everything.</b> Your answers go straight to my inbox, and I'll be in touch to talk through next steps.</p>
+<div><button type="submit">Send my answers →</button><p class="err" id="err" role="alert">Please fill in your name, email and business so I can reach you.</p></div>
+</div>
+</form>
+<footer>Prabhleen Kaur · <span class="it">where strategy gets a heartbeat</span></footer>
+
+<script>
+(function(){
+var f=document.getElementById('intake');
+f.addEventListener('submit',function(e){
+ if(!f.checkValidity()){e.preventDefault();document.getElementById('err').style.display='block';f.reportValidity();return;}
+ [].forEach.call(f.querySelectorAll('[data-group]'),function(g){
+  var vals=[].map.call(g.querySelectorAll('input:checked'),function(i){return i.value});
+  var h=g.querySelector('input[type=hidden]');
+  if(!h){h=document.createElement('input');h.type='hidden';h.name=g.getAttribute('data-group');g.appendChild(h);}
+  h.value=vals.join(', ')||'(none selected)';
+ });
+ var biz=document.getElementById('biz').value.trim();
+ document.getElementById('subj').value='New project intake: '+(biz||document.getElementById('name').value.trim());
+});
+})();
+</script>
+</body>
+</html>
